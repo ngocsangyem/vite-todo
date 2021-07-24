@@ -4,9 +4,12 @@
 		"module": "esnext",
 		"moduleResolution": "node",
 		"strict": true,
+		"importHelpers": true,
+		"skipLibCheck": true,
 		"jsx": "preserve",
 		"sourceMap": true,
 		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"lib": [
 			"esnext",
@@ -18,5 +21,8 @@
 		"src/**/*.d.ts",
 		"src/**/*.tsx",
 		"src/**/*.vue"
+	],
+	"exclude": [
+		"node_modules"
 	]
 }
