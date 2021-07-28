@@ -15,7 +15,9 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
+// @import './styles/styles.scss';
+
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
