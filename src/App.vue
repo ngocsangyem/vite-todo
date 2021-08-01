@@ -1,22 +1,22 @@
 <template>
 	<img alt="Vue logo" src="./assets/logo.png" />
-	<todo-header></todo-header>
+	<todo></todo>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import TodoHeaderVue from './components/TodoHeader.vue';
+import Todo from './components/Todo.vue';
 
 export default defineComponent({
 	name: 'App',
 	components: {
-		'todo-header': TodoHeaderVue,
+		todo: Todo,
 	},
 });
 </script>
 
 <style lang="scss">
-// @import './styles/styles.scss';
+@import './styles/styles.scss';
 
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
