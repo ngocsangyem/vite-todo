@@ -7,17 +7,21 @@ import { defineComponent } from 'vue';
 export default defineComponent({});
 </script>
 
+<style lang="scss">
+.todo-input {
+	min-height: calc(var(--height) + var(--form-control-padding-y));
+	line-height: calc(var(--height) + var(--form-control-padding-y));
+}
+</style>
+
 <style lang="scss" scoped>
 .todo-input {
 	--height: 30px;
 
-	min-height: var(--height);
-	max-height: 150px;
+	max-height: 60px;
 	width: 100%;
 
 	text-align: left;
-	line-height: var(--height);
-
 	overflow: auto;
 
 	&:focus {
