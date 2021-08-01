@@ -42,6 +42,8 @@ export default defineComponent({
 
 .todo-input {
 	width: 100%;
+	vertical-align: middle;
+	line-height: 1;
 	&:focus {
 		outline: none;
 	}

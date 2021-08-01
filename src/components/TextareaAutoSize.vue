@@ -4,6 +4,7 @@
 		v-model="val"
 		:style="computedStyles"
 		@focus="resize"
+		class="reset"
 	></textarea>
 </template>
 
@@ -50,6 +51,7 @@ export default defineComponent({
 			return {
 				resize: 'none',
 				height: height.value,
+				'line-height': props.minHeight + 'px',
 				overflow: maxHeightScroll ? 'auto' : 'hidden',
 			};
 		});
